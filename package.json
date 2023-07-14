@@ -1,0 +1,19 @@
+{
+  "name": "haloged-picture",
+  "version": "1.0.0",
+  "description": "npm图床",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haloged/picture.git"
+  },
+  "author": "haloged",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haloged/picture/issues"
+  },
+  "homepage": "https://github.com/haloged/picture#readme"
+}

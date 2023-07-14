@@ -1,0 +1,25 @@
+name: Node.js Package
+# 监测图床分支，2020年10月后github新建仓库默认分支改为main，记得更改
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "18.x"
+          registry-url: https://registry.npmjs.org/
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+
+
+作者: QianChengGit
+链接: https://qianchenggit.github.io/2021/11/22/npm%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/
+来源: QianChengGitの小森林
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
