@@ -17,9 +17,3 @@ jobs:
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
-
-
-作者: QianChengGit
-链接: https://qianchenggit.github.io/2021/11/22/npm%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/
-来源: QianChengGitの小森林
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
