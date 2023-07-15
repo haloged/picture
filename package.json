@@ -1,6 +1,6 @@
 {
   "name": "haloged-picture",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "npm图床",
   "main": "index.js",
   "scripts": {
