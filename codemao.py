@@ -14,10 +14,28 @@ print("""
                  /___/
 编程猫数据统计
 作者：haloged
+版本：0.1.3
 ============================================================                                                            
 """)
 
 def main():
+   codemao_id=input("请输入您的编程猫ID")
+   get=requests.get("https://api.codemao.cn/api/user/info/detail/"+codemao_id,headers=headers)
+   #print(get.text)
+   user_data = json.loads(get.text)
+   user_data_data=json.loads(user_data[data])
+   user_data_data_data=json.load(user_data_data[userInfo])
+   user_data_data_data_data=json.load(user_data_data_data[user])
+   print(user_data_data_data_data[id])
+   print(user_data.items())
+   #if(user_data[code]=="200"):
+      #pass
+   #else:
+      #print("请求失败，请检查网络。")
+
+
+
+def fei():
    login_phonenunber=int(input("请输入注册编程猫的手机号"))
    login_password=input("请输入编程猫密码")
    login_data = {
@@ -29,4 +47,5 @@ def main():
    print(get_cookie.text)
    cookie_test=requests.get("https://api.codemao.cn/api/user/info")
    print(cookie_test.text)
+
 main()
