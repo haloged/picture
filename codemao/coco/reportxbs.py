@@ -3,7 +3,7 @@ import pandas as pd
 import random
 
 session = Session()
-print("制作: 2302 No.10")
+print("制作: 2302 No.10 二改：haloged")
 a = int(input("请先搜索新百胜,然后输入帖子页数:"))
 hasReported = 0
 xlsx = pd.read_excel("./acc.xlsx")
